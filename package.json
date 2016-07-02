@@ -1,0 +1,45 @@
+{
+  "name": "brokerage",
+  "version": "0.0.1b",
+  "description": "Node wrapper for brokerage APIs",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HiFaraz/brokerage.git"
+  },
+  "keywords": [
+    "node",
+    "stock",
+    "trade",
+    "trading",
+    "equity",
+    "forex",
+    "fex",
+    "cfd",
+    "etf",
+    "index",
+    "broker",
+    "brokerage",
+    "api",
+    "wrapper"
+  ],
+  "author": "Faraz Syed",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/HiFaraz/brokerage/issues"
+  },
+  "homepage": "https://github.com/HiFaraz/brokerage#readme",
+  "dependencies": {
+    "http-codes": "^1.0.0",
+    "rest": "^2.0.0"
+  }
+}
