@@ -17,4 +17,5 @@ var notConnected = function (error) {
 	console.log('FAIL', error)
 }
 quest.test(connected, notConnected);
-quest.user.id(console.log)
+quest.accounts(console.log)
+quest.user(console.log)
