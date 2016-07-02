@@ -39,7 +39,6 @@
 	},
 	"homepage": "https://github.com/HiFaraz/brokerage#readme",
 	"dependencies": {
-		"http-codes": "^1.0.0",
 		"rest": "^2.0.0"
 	}
 }
