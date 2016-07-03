@@ -32,21 +32,25 @@ function connected() {
 		//		console.log('TIME', datetime);
 	}).catch(genericFailure);
 	broker.user().then(function (id) {
-		//		console.log('USER', id);
+		console.log('USER', id);
 	}).catch(genericFailure)
 	broker.accounts().then(function (accounts) {
-		//		console.log('ACCOUNTS', accounts);
+		console.log('ACCOUNTS', 'Found ' + accounts.length + ' accounts');
 	}).catch(genericFailure);
 	broker.findSymbols('microsoft').then(function (symbols) {
-		//		console.log('FIND SYMBOLS', symbols);
+		console.log('SYMBOL SEARCH', 'Found ' + symbols.length + ' accounts');
 	}).catch(genericFailure);
 	//	broker.symbol(27426).then(function (symbol) {
-	broker.symbols([27426, 2067121]).then(function (symbol) {
-		//		console.log('GET SYMBOLS', symbol);
+	broker.symbols([27426, 2067121]).then(function (symbols) {
+		console.log('GET SYMBOLS', 'Got symbol data for ' + symbols.map(function (symbol) {
+			return symbol.symbol
+		}).join(','));
 	}).then().catch(genericFailure);
-	//	broker.quotes(2067121).then(function (symbol) {
-	broker.quotes([27426, 2067121]).then(function (symbol) {
-		//		console.log('QUOTE', symbol);
+	//	broker.quotes(2067121).then(function (symbols) {
+	broker.quotes([27426, 2067121]).then(function (symbols) {
+		console.log('QUOTES', 'Got quotes for ' + symbols.map(function (symbol) {
+			return symbol.symbol
+		}).join(','));
 	}).catch(genericFailure);
 };
 
