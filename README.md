@@ -40,3 +40,6 @@ Name|Status|Discussion
 Questrade|in progress|[Github issue](https://github.com/HiFaraz/brokerage/issues/1)	
 E*TRADE|not started|
 Interactive Brokers|not started|
+TD Ameritrade|not started|
+Firstrade|not started|
+TradeKing|not started|
