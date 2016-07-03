@@ -1,7 +1,7 @@
 {
 	"name": "brokerage",
-	"version": "0.0.2",
-	"description": "Node wrapper for brokerage APIs",
+	"version": "0.0.3",
+	"description": "Connect to brokerage APIs with one interface",
 	"main": "./lib",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
