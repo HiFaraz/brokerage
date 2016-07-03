@@ -27,7 +27,8 @@ var connected = function () {
 	broker.symbol(27426).then(function (symbol) {
 		console.log('MICROSOFT', symbol);
 	}).then().catch(genericFailure);
-	broker.quotes(2067121).then(function (symbol) {
+	//	broker.quotes(2067121).then(function (symbol) {
+	broker.quotes([27426, 2067121]).then(function (symbol) {
 		console.log('QUOTE', symbol);
 	}).catch(genericFailure);
 };

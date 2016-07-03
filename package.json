@@ -24,7 +24,8 @@
     "broker",
     "brokerage",
     "api",
-    "wrapper"
+    "wrapper",
+	"questrade"
   ],
 	"author": "Faraz Syed",
 	"license": "MIT",
