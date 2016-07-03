@@ -1,6 +1,6 @@
 # brokerage
 
-Connect to brokerage APIs with one interface
+Trade stocks on multiple brokerages with one API
 
 **NOTE: this is a pre-production version, and the module interfaces and functionality are not stable yet.**
 
