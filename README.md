@@ -16,6 +16,7 @@ broker.time();
 broker.quotes(id);
 broker.quotes([id1,id2,...]);
 broker.symbols(id);
+broker.symbols([id1,id2,...]);
 broker.user();
 ```
 

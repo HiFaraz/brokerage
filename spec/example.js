@@ -38,10 +38,11 @@ function connected() {
 		//		console.log('ACCOUNTS', accounts);
 	}).catch(genericFailure);
 	broker.findSymbols('microsoft').then(function (symbols) {
-		//		console.log('SYMBOLS', symbols);
+		//		console.log('FIND SYMBOLS', symbols);
 	}).catch(genericFailure);
-	broker.symbol(27426).then(function (symbol) {
-		//		console.log('MICROSOFT', symbol);
+	//	broker.symbol(27426).then(function (symbol) {
+	broker.symbols([27426, 2067121]).then(function (symbol) {
+		//		console.log('GET SYMBOLS', symbol);
 	}).then().catch(genericFailure);
 	//	broker.quotes(2067121).then(function (symbol) {
 	broker.quotes([27426, 2067121]).then(function (symbol) {
