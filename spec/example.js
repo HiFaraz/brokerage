@@ -1,21 +1,33 @@
 // this token is from a practice account on Questrade
 var token = {
-	"access_token": "NQTD5kxZA7O-SqpPlaeWwQZulEcALsNf0",
+	"access_token": "jL4gA5gj25JrSVgAyvrKvfDE1y2gEZde0",
 	"api_server": "https://api08.iq.questrade.com/",
 	"expires_in": 1800,
-	"refresh_token": "ZFG-_zaA2p9X3gDZHn2jkgAh-KMkBCKv0",
+	"refresh_token": "JgQwKLsoMmAAYxPrbwnm_wEbTOOi_1mh0",
 	"token_type": "Bearer"
 }
 
 var brokerage = require('../lib');
-var quest = new brokerage('questrade', token);
+var broker = new brokerage('questrade', token);
 
 var connected = function () {
-	console.log('PASS');
-	quest.accounts().then(console.log).catch(console.log)
-	quest.user().then(console.log).catch(console.log)
+	console.log('PASS Connection to broker API established');
+	broker.time().then(function (datetime) {
+		console.log('TIME', datetime);
+	}).catch(genericFailure);
+	broker.user().then(function (id) {
+		console.log('USER', id);
+	}).catch(genericFailure)
+	broker.accounts().then(function (accounts) {
+		console.log('ACCOUNTS', accounts);
+	}).catch(genericFailure);
+	broker.findSymbols('microsoft').then(function (symbols) {
+		console.log('SYMBOLS', symbols);
+	}).catch(genericFailure)
 };
-var notConnected = function (error) {
-	console.log('FAIL', error)
+
+broker.test().then(connected).catch(genericFailure);
+
+function genericFailure(error) {
+	console.error('FAIL', error);
 }
-quest.test().then(connected).catch(notConnected);

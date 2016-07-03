@@ -6,11 +6,11 @@ Connect to brokerage APIs with one interface
 
 ```javascript
 var brokerage = require('brokerage');
-var questrade = new brokerage('questrade', token);
+var broker = new brokerage('questrade', token);
 
-questrade.test(onSuccess, onFailure);
-questrade.user(onSuccess, onFailure);
-questrade.accounts(onSuccess, onFailure);
+broker.test(onSuccess, onFailure);
+broker.user(onSuccess, onFailure);
+broker.accounts(onSuccess, onFailure);
 ```
 
 ## 1. Installation
