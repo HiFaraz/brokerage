@@ -1,7 +1,7 @@
 {
 	"name": "brokerage",
-	"version": "0.1.0",
-	"description": "Connect to brokerage APIs with one interface",
+	"version": "0.1.1",
+	"description": "Trade stocks on multiple brokerages with one API",
 	"main": "./lib",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
