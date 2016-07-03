@@ -23,7 +23,10 @@ var connected = function () {
 	}).catch(genericFailure);
 	broker.findSymbols('microsoft').then(function (symbols) {
 		console.log('SYMBOLS', symbols);
-	}).catch(genericFailure)
+	}).catch(genericFailure);
+	broker.symbol(27426).then(function (symbol) {
+		console.log('MICROSOFT', symbol);
+	}).then().catch(genericFailure);
 };
 
 broker.test().then(connected).catch(genericFailure);
