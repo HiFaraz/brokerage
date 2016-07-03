@@ -8,9 +8,15 @@ Connect to brokerage APIs with one interface
 var brokerage = require('brokerage');
 var broker = new brokerage('questrade', token);
 
-broker.test(onSuccess, onFailure);
-broker.user(onSuccess, onFailure);
-broker.accounts(onSuccess, onFailure);
+// The following return a Promise:
+broker.accounts();
+broker.findsymbols(description);
+broker.test();
+broker.time();
+broker.quotes(id);
+broker.quotes([id1,id2,...]);
+broker.symbols(id);
+broker.user();
 ```
 
 ## 1. Installation
