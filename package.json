@@ -1,6 +1,6 @@
 {
 	"name": "brokerage",
-	"version": "0.0.4",
+	"version": "0.0.4b",
 	"description": "Connect to brokerage APIs with one interface",
 	"main": "./lib",
 	"scripts": {
