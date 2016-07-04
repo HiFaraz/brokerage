@@ -44,3 +44,7 @@ Interactive Brokers|not started|
 TD Ameritrade|not started|
 Firstrade|not started|
 TradeKing|not started|
+
+## 3. Other features
+
+* log response times by provider (coming soon)

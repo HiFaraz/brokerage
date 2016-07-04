@@ -1,6 +1,6 @@
 {
 	"name": "brokerage",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"description": "Trade stocks on multiple brokerages with one API",
 	"main": "./lib",
 	"scripts": {
@@ -11,35 +11,36 @@
 		"url": "git://github.com/HiFaraz/brokerage.git"
 	},
 	"keywords": [
-    "node",
-    "stock",
-    "trade",
-    "trading",
-    "equity",
-    "forex",
-    "fex",
-    "cfd",
-    "etf",
-    "index",
-    "broker",
-    "brokerage",
-    "api",
-    "wrapper",
-	"questrade"
-  ],
+		"node",
+		"stock",
+		"trade",
+		"trading",
+		"equity",
+		"forex",
+		"fex",
+		"cfd",
+		"etf",
+		"index",
+		"broker",
+		"brokerage",
+		"api",
+		"wrapper",
+		"questrade"
+	],
 	"author": "Faraz Syed",
 	"license": "MIT",
 	"licenses": [
 		{
 			"type": "MIT",
 			"url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+		}
+	],
 	"bugs": {
 		"url": "https://github.com/HiFaraz/brokerage/issues"
 	},
 	"homepage": "https://github.com/HiFaraz/brokerage#readme",
 	"dependencies": {
-		"rest": "^2.0.0"
+		"rest": "^2.0.0",
+		"rest-interceptor-responsetime": "^1.0.0"
 	}
 }
