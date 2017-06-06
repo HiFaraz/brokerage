@@ -1,5 +1,7 @@
 # brokerage
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/HiFaraz/brokerage.svg)](https://greenkeeper.io/)
+
 Trade stocks on multiple brokerages with one API
 
 **NOTE: this is a pre-production version, and the module interfaces and functionality are not stable yet.**
